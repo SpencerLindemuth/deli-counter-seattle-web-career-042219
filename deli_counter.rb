@@ -15,7 +15,10 @@ def now_serving(line)
 end
 
 def line(array)
-  if !array.length
-    puts "The line is currently:"
+ base = "The line is currently: "
+ array.each_index do |name, index|
+  if index < array.length
+    base += "#{index}. #{name}, "
   end
+else
 end
