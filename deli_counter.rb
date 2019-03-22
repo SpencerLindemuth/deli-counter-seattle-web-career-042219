@@ -22,6 +22,6 @@ def line(array)
   else
     base += "#{index}. #{name}"
   end
-end
+ end
 return base
 end
