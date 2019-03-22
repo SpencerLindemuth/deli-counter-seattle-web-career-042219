@@ -9,7 +9,7 @@ def now_serving(line)
     puts "Currently serving #{line.first}"
     return line.shift!
   else
-    puts "The line is currently empty"
+    puts "There is nobody waiting to be served"
   end
 end
 
