@@ -20,7 +20,7 @@ def line(array)
    puts "The line is currently empty."
  else
   array.each_index do |index|
-    if index < array.length
+    if (index + 1) < array.length
       base += "#{index + 1}. #{array[index]}, "
     else
       base += "#{index + 1}. #{array[index]}"
