@@ -23,4 +23,5 @@ def line(array)
     base += "#{index}. #{name}"
   end
 end
+return base
 end
