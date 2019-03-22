@@ -10,6 +10,9 @@ def now_serving(line)
     return line.shift!
   else
     puts "The line is currently empty"
+  end
+end
+
 def line(array)
   if !array.length
     puts "The line is currently:"
