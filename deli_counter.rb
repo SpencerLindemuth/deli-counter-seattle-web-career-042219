@@ -27,5 +27,5 @@ def line(array)
     end
  end
  end
-return base
+puts base
 end
