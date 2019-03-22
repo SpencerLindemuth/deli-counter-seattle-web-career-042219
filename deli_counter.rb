@@ -16,7 +16,7 @@ end
 
 def line(array)
  base = "The line is currently: "
- if array.length == 0
+ if !array.length
    puts "The line is currently empty."
  else
   array.each_index do |name, index|
