@@ -21,9 +21,9 @@ def line(array)
  else
   array.each_index do |index, name|
     if (index < array.length)
-      base += "#{index + 1}. #{name}, "
+      base += "#{index + 1}. #{array[index]}, "
     else
-      base += "#{index + 1}. #{name}"
+      base += "#{index + 1}. #{array[index]}"
     end
  end
  end
