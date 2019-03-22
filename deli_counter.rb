@@ -19,13 +19,13 @@ def line(array)
  if array.length == 0
    puts "The line is currently empty."
  else
-  array.each_index do |name, index|
+  array.each_index { |name, index|
     if (index < array.length)
       base += "#{index}. #{name}, "
     else
       base += "#{index}. #{name}"
     end
- end
+ }
  end
 puts base
 end
