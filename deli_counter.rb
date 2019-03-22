@@ -18,13 +18,14 @@ def line(array)
  base = "The line is currently: "
  if array.length == 0
    return "The line is currently empty."
+ else
+  array.each_index do |name, index|
+    if index < array.length
+      base += "#{index}. #{name}, "
+    else
+      base += "#{index}. #{name}"
+    end
  end
- array.each_index do |name, index|
-  if index < array.length
-    base += "#{index}. #{name}, "
-  else
-    base += "#{index}. #{name}"
-  end
  end
 return base
 end
