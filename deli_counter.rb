@@ -5,7 +5,7 @@ def take_a_number(line, name)
 end
 
 def now_serving(line)
-  if !line.length
+  if line.length > 0
     puts "Currently serving #{line.first}"
     return line.shift!
   else
